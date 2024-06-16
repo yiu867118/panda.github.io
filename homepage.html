@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>루이&후이</title>
+    <style>
+        body{
+            background-size: 100%;
+            background-size: 100%;
+        }
+        header{
+            background-color: rgba(149, 215, 245, 0.9);
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        h3{
+            transform: translateY(-80%);
+            font-size: 35px;
+        }
+        h3, #img1{
+            display: inline-block;
+        }
+        #img1:hover{
+            transform: scale(1.02); 
+            transition: transform 0.3s ease;
+        } 
+        #img1{
+            border-radius: 100px;
+        }
+        #login{
+            float: right;
+            color: #070707;
+            margin-right: 3%;
+            font-weight: 600;
+        }
+        #navbar{
+            display: block;
+            display: flex; 
+            justify-content: flex-start;
+            background-color: rgba(228, 244, 252, 0.9);
+        }
+        #navbar a {
+            border-radius: 50px;
+            color: #070707;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 14px 16px;
+            text-decoration: none;
+            line-height: 2.0;
+        }
+
+        #navbar a:hover, #login:hover{
+            background-color: rgba(205, 233, 252, 0.9);
+            color: black;
+            border-radius: 50px;
+        }
+
+        #container {
+            display: flex;
+        }
+
+        h4{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        h5{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        p{
+            line-height: 1.8;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 550;
+        }
+        #news{
+            width: 45%;
+            height: 700px;
+            margin-top: 2%;
+            overflow: hidden;
+            display: inline-block;
+            background-color: white;
+            background-image: url(1.jpg);
+            background-size: 100px,100px;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            margin-left: 1%;
+            border-radius: 10px;
+            border: dotted;
+            border-color: rgb(186, 226, 253);
+
+        }
+        h4:hover, h5:hover{
+            transform: scale(1.01); 
+            transition: transform 0.3s ease;
+        }
+        .news{
+            overflow: hidden;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
+        .news:hover, .re:hover{
+            background-color: rgba(206, 231, 245, 0.9);
+            border-radius: 10px;
+            transform: scale(1.02); 
+            transition: transform 0.3s ease;
+        }
+        #related{
+            display: inline-block;
+            background-color: white;
+            background-image: url(7.jpg);
+            background-size: 300px 300px;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            width: 45%;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+            margin-top: 2%;
+            border-radius: 10px;
+            border: dotted;
+            border-color: rgb(197, 229, 250);
+        }
+        .re{
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
+
+        #picture {
+            overflow: hidden;
+            display: flex; 
+            margin-left: 5%;
+            margin-right: 5%;
+            position: relative;
+            border-radius: 10px;
+        }
+        #pictures {
+            display: flex; 
+            transition: transform 0.3s ease-in-out;
+        }
+        #pictures img {
+            width: 500px;
+            height: 300px;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            z-index: 100;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 40px;
+            color: black;
+        }
+
+        #prev {
+            left: -60px;
+        }
+
+        #next {
+            right: -60px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+    
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            z-index: 1;
+            background-color: rgb(203, 227, 248, 0.9);
+        }
+
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <br>
+        <h3>루이&후이 바오  </h3>
+        <img id="img1" src="3.jpg" alt="" width="100" height="100">
+        <a id="login" href="login.html" class="login">login</a>
+        <hr>
+    </header>
+    <br>
+    <div id="navbar">
+        <div class="dropdown" style="margin-left: 10%; margin-top: 1%;">
+            <a href="homepage.html">홈페이지</a>
+            <div class="dropdown-content">
+                <a href="#news">뉴스</a>
+                <a href="#related">관련 자료 안내</a>
+            </div>
+        </div>
+        <a href="intro.html" style="margin-left: 20%;">루이&후이 소개</a>
+        <a href="aboutus.html" style="margin-left: 30%;">우리에 대해</a>
+    </div>
+
+    <br>
+    <div id="prev" class="arrow">&lt;</div>
+    <div id="picture">
+        <div id="pictures">
+            <img src="10.jpg" alt="">
+            <img src="12.jpg" alt="">
+            <img src="13.jpg" alt="">
+            <img src="14.jpg" alt="">
+            <img src="15.jpg" alt="">
+            <img src="16.jpg" alt="">
+        </div>
+    </div>
+    <div id="next" class="arrow">&gt;</div>
+
+    <div id="container">
+        <br>
+        <br>
+        <br>
+        <div id="news">
+            <br>
+            <h4>뉴스</h4>
+            <div class="news">
+                <h5><a href="https://www.hani.co.kr/arti/international/international_general/1128098.html"
+                    onclick="alert('뉴스를 확인하러 가시겠습니까?')">루이·후이바오도 4살 되면 중국 가나요?</a></h5>
+                <p>지난해 에버랜드에서 태어난 루이바오와 후이바오도 4살이 되면 푸바오처럼 중국에 가나? 두 판다가 아직 태어난 지 얼마 안 됐다........</p>
+            </div>
+            <div class="news">
+                <h5><a href="https://www.hani.co.kr/arti/animalpeople/human_animal/1122768.html"
+                    onclick="alert('뉴스를 확인하러 가시겠습니까?')">루이·후이바오 이제 바깥에서 만나요~ 예행연습도 끝!</a></h5>
+                <p>지난해 7월 에버랜드에서 태어난 ‘푸바오 동생’ 쌍둥이 판다 루이바오와 후이바오는 출생 당시 몸무게가 각각 200g이 채 안 됐다. 약 6개월이 지난 현재, 쌍둥이들 모두 체중이 11kg를 넘어서며 ‘폭풍 성장’했다. 실내에서만 지내던 쌍둥이들은 4일부터 일반 관람객에게 공개될 예정이다.......</p>
+            </div>
+            <div class="news">
+                <h5><a href="https://www.etoday.co.kr/news/view/2350073"
+                    onclick="alert('뉴스를 확인하러 가시겠습니까?')">푸바오 동생 루이·후이바오도 폭풍 성장 중…공개 100일만 근황</a></h5>
+                <p>12일 에버랜드에 따르면 7월 7일 각각 몸무게 180g, 140g으로 태어난 쌍둥이 아기 판다 루이바오와 후이바오는 어미 아이바오와 사육사들의 극진한 보살핌 속에 생후 8개월 만에 몸무게 25kg을 넘기며 약 150배 성장했다.......</p>
+            </div>
+        </div>
+
+        <div id="related">
+            <h4>관련 자료 안내</h4>
+            <br>
+            <div class="re"><h5><a href="https://www.youtube.com/hashtag/%EB%A3%A8%EC%9D%B4%ED%9B%84%EC%9D%B4"
+                onclick="alert('Youtube로 이동하시겠습니까?')">루이&후이 바오 Youtube</a></h5>
+                <p>여기에는 두 마리의 판다가 행복하게 생활하는 모습이 담겨 있습니다</p>
+            </div>
+            <div class="re"><h5><a href="https://www.instagram.com/ruihui_diary/"
+                onclick="alert('Instagram으로 이동하시겠습니까?')">루이&후이 바오 Instagram</a></h5>
+                <p>두 마리 판다의 생활 일기</p>
+            </div>
+            <div class="re"><h5><a href="https://m.blog.naver.com/kyekun1001/223439788538"
+                    onclick="alert('블로그로 이동하시겠습니까?')">루이&후이 바오 블로그</a></h5>
+                <p>판다관은 정말 재미있을까요? 다른 사람들이 어떻게 말하는지 봅시다</p>
+            </div>
+            <div class="re"><h5><a href="https://m.place.naver.com/place/1866187521/home"
+                onclick="alert('지도로 이동하시겠습니까?')">루이&후이 바오 가는 길</a></h5>
+                <p>두 마리 판다를 만나러 가는 길을 찾아 해봐세요!</p>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        let picture = document.getElementById('picture');
+        let pictures = document.getElementById('pictures');
+        let prevArrow = document.getElementById('prev');
+        let nextArrow = document.getElementById('next');
+        let pictureIndex = 0;
+        let autoSlideTimeout;
+
+        function slideToIndex(index) {
+            pictures.style.transform = 'translateX(' + (-500 * index) + 'px)';
+        }
+
+        function resetAutoSlide() {
+            clearTimeout(autoSlideTimeout);
+            autoSlideTimeout = setTimeout(function() {
+                if (pictureIndex < pictures.children.length - 1) {
+                    pictureIndex++;
+                } else {
+                    pictureIndex = 0;
+                }
+                slideToIndex(pictureIndex);
+            }, 5000); 
+        }
+
+        prevArrow.addEventListener('click', function() {
+            if (pictureIndex > 0) {
+                pictureIndex--;
+                slideToIndex(pictureIndex);
+            }
+            resetAutoSlide();
+        });
+
+        nextArrow.addEventListener('click', function() {
+            if (pictureIndex < pictures.children.length - 1) {
+                pictureIndex++;
+                slideToIndex(pictureIndex);
+            }
+            resetAutoSlide();
+        });
+
+        resetAutoSlide();
+    </script>
+    
+</body>
+
+</html>
